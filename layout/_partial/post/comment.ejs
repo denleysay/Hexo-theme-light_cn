@@ -1,0 +1,22 @@
+<% if (page.comments){ %>
+    <section id="comment">
+    <!-- <h1 class="title"><%= __('comment') %></h1> -->
+    <% if (theme.comment_provider == 'gitment' && theme.gitment.enable){%>
+		<div id="container"></div>
+		<link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+		<script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+		<script>
+		var gitment = new Gitmint({
+          lang: "<%= theme.gitment.language %>" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+		  owner: "<%= theme.gitment.github_user %>",
+		  repo: "<%= theme.gitment.github_repo %>",
+		  oauth: {
+		    client_id: "<%= theme.gitment.client_id %>",
+		    client_secret: "<%= theme.gitment.client_secret %>",
+		  },
+		})
+		gitment.render('container')
+		</script>
+	<% } %>
+    </section>
+<% } %>

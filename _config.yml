@@ -1,13 +1,10 @@
 menu:
   home: /
   archives: /archives
-  Node.js: /node
-  books: /hexo
-  
-submenu:
-  rss: /atom.xml
-  customization: /customization
+  books: https://<blog_book_name>.justtodo.com/
   about: /about
+
+submenu:
 
 menu_icon:
   home: home
@@ -19,23 +16,23 @@ menu_icon:
   customization: question-circle
 
 widgets:
-# - search
+- search
 - category
-- weixin
-- calendar
-- links
-# - tagcloud
-# - tag
+- tagcloud
 - archive
+# - tag
+# - calendar
+# - weixin
+- links
 # - weibo
 
-excerpt_link: Read More
-comment_link: Comments
+excerpt_link: 阅读原文
+comment_link: 所有评论
 
 # header头像
-avatar: /img/default/avatar.png
+avatar: /assets/images/avator.jpeg
 # header右侧图片展示
-ad: 
+ad:
 
 # 百度分享
 baidu_share: true
@@ -51,33 +48,31 @@ weibo:
 # Calendar
 calendar:
   language: zh-CN
-  root: calendar
+  single: true
+  root: /calendar/
 
 # weixin
 weixin:
-  qrcode: /img/default/qrcode.jpg
-  alt: 欢迎关注个人公众账号
+  qrcode: /assets/images/weixin.jpeg
 
 # links
 links:
-  晓晓博客: http://xiaoyun.farbox.com
-  图灵社区: http://www.ituring.com.cn/users/136808
 
 # farbox
 fancybox: true
 
-# resume
-resume_photo: /assets/img/resume/resume.jpg
-resume:
-  name: 鲁 鹏
-  birth: 1989年5月
-  nation: 汉族
-  political_status: 中共党员
-  birth_place: 湖北省武汉市
-  domicile_place: 北京市
-  address: 北京市房山区北京理工大学良乡校区
-  postcode: 102488
-  email: decadent_prince@foxmail.com
-  phone: 18511xxxxxx
-  
-  
+# Gitment
+# Introduction: https://imsun.net/posts/gitment-introduction/
+gitment:
+  enable: true
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: false # Hide 'Powered by ...' on footer, and more
+  language: # Force language, or auto switch by theme
+  github_user: '<blog_user_name>' # MUST HAVE, Your Github Username
+  github_repo: '<blog_user_name>.github.io' # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: '<blog_client_id>' # MUST HAVE, Github client id for the Gitment
+  client_secret: '<blog_client_secret>' # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
