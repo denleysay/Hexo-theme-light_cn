@@ -1,7 +1,7 @@
 menu:
   home: /
   archives: /archives
-  books: https://<blog_book_name>.justtodo.com/
+  books: https://kbase.justtodo.com/
   about: /about
 
 submenu:
@@ -60,6 +60,13 @@ weixin:
 
 # links
 links:
+  我的CSDN博客: http://blog.csdn.net/ietj
+  我的CppBlog: http://www.cppblog.com/ietj
+  hlq的编程岁月: https://hlqyq.github.io/
+  阮一峰的个人网站: http://www.ruanyifeng.com/home.html
+  rei的个人网站: http://chloerei.com/
+  37signals: https://basecamp.com/
+  Rework: https://www.v2ex.com/rework
 
 # farbox
 fancybox: true
@@ -73,9 +80,9 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: '<blog_user_name>' # MUST HAVE, Your Github Username
-  github_repo: '<blog_user_name>.github.io' # MUST HAVE, The name of the repo you use to store Gitment comments
-  client_id: '<blog_client_id>' # MUST HAVE, Github client id for the Gitment
-  client_secret: '<blog_client_secret>' # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: 'denleyhsiao' # MUST HAVE, Your Github Username
+  github_repo: 'denleyhsiao.github.io' # MUST HAVE, The name of the repo you use to store Gitment comments
+  client_id: 'af6ec87298ccb7488118' # MUST HAVE, Github client id for the Gitment
+  client_secret: 'c142237c601b452e362f74082d81e8869515aa6a' # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
