@@ -34,6 +34,9 @@ avatar: /assets/images/avator.jpeg
 # header右侧图片展示
 ad:
 
+# 评论提供可以选择 duoshuo 或者 wumii，无需评论，此处不填就行。 // duoshuo已经废除
+comment_provider: gitment
+
 # 百度分享
 baidu_share: true
 

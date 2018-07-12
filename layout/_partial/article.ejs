@@ -41,6 +41,9 @@
     </footer>
   </div>
 </article>
+<% if (!index) {%>
+  <%- partial('post/comment') %>
+<% } %>
 <!-- 返回顶部 -->
 <div id="toTop">
 	<a href="#">▲</a>
